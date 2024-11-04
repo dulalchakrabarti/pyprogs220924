@@ -1,7 +1,7 @@
 from geopy.geocoders import Nominatim
 import tabula
 import pandas as pd
-url = 'https://cpcb.nic.in//upload/Downloads/AQI_Bulletin_20241102.pdf'
+url = 'https://cpcb.nic.in//upload/Downloads/AQI_Bulletin_20241103.pdf'
 dfs = tabula.io.read_pdf(url, pages='all')
 pages = len(dfs) - 1
 dfs1 = dfs[:pages]
